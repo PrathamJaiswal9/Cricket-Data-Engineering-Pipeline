@@ -18,10 +18,7 @@ base_path = '/Volumes/workspace/default/cricket_api_project'
 # COMMAND ----------
 
 # DBTITLE 1,CALLING Cricket API
-api_key = dbutils.secrets.get(
-    scope="cricket-api",
-    key="cricapi-key"
-)
+api_key = "your-api-key"
 
 api_url = f"https://api.cricapi.com/v1/currentMatches?apikey={api_key}&offset=0"
 
